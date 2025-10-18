@@ -13,6 +13,9 @@ public class Product {
     private String name;
     private double price;
 
+    @ManyToOne
+    @JoinColumn(name = "category_id")
+    private Category category;
     public Product() {}
 
     // Getters et Setters
